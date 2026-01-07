@@ -26,8 +26,8 @@ st.title("🍪 Cookie Cats – A/B Testing Dashboard")
 gate_a = st.sidebar.selectbox("Gate A", [30, 40])
 gate_b = st.sidebar.selectbox("Gate B", [30, 40])
 
-group_a = df[df['gate'] == gate_a]
-group_b = df[df['gate'] == gate_b]
+group_a = df[df['version'] == f"gate_{gate_a}"]
+group_b = df[df['version'] == f"gate_{gate_b}"]
 
 # KPIs
 col1, col2, col3, col4 = st.columns(4)
