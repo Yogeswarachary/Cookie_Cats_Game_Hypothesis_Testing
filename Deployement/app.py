@@ -12,7 +12,8 @@ except ImportError as e:
 
 @st.cache_data
 def load_data():
-    url = "https://raw.githubusercontent.com/Yogeswarachary/Cookie_Cats_Game_Hypothesis_Testing/main/CSV Data/cookie_cats.csv"
+    url = "https://raw.githubusercontent.com/Yogeswarachary/Cookie_Cats_Game_Hypothesis_Testing/main/CSV%20Data/cookie_cats.csv"
+
     df = pd.read_csv(url)
     return df
 
